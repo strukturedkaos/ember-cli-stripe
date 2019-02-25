@@ -1,11 +1,11 @@
 /* global Stripe */
-import Service from '@ember/service';
-import { setProperties } from '@ember/object';
-import { readOnly } from '@ember/object/computed';
+
+import { setProperties } from Ember.object;
+import { readOnly } from Ember.object.computed;
 import { resolve } from 'rsvp';
 import loadScript from 'ember-stripe-elements/utils/load-script';
 
-export default Service.extend({
+export default (Ember.Service || Ember.Object).extend({
   config: null,
   didConfigure: false,
   didLoad: false,
