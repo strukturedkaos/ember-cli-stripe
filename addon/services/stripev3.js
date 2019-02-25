@@ -1,7 +1,8 @@
 /* global Stripe */
+import Ember from 'ember';
 
-import { setProperties } from Ember.object;
-import { readOnly } from Ember.object.computed;
+const { setProperties } = Ember.object;
+const { readOnly } = Ember.object.computed;
 import { resolve } from 'rsvp';
 import loadScript from 'ember-stripe-elements/utils/load-script';
 
